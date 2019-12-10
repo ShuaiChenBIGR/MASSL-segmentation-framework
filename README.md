@@ -2,8 +2,7 @@
 
 Multi-task Attention-based Semi-supervised Learning framework for image segmentation based on the paper published at MICCAI 2019 (https://arxiv.org/abs/1907.12303) by Shuai Chen, et al.
 
-<img src="https://github.com/ShuaiChenBIGR/MASSL-segmentation-framework/blob/master/MASSL_MRI.png
-" width="800"/>
+<img src="MASSL_MRI.png" width="800"/>
 
 For questions please contact me through github or email directly.
 
