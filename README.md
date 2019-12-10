@@ -39,4 +39,5 @@ If you find the method useful for your research, please consider citing the pape
   organization={Springer}
 }
 
-<img src="MICCAI 2019_poster.pdf" width="800"/>
+Poster:
+<img src="MICCAI 2019_poster.png" width="800"/>
