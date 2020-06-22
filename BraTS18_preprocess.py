@@ -17,7 +17,7 @@ from utils.mkdir import mkdir
 import warnings
 warnings.filterwarnings('ignore')
 
-brats_main_dir = '/media/schen/e046fc45-1353-4ef3-b034-389900ef7149/PythonCodes/Alternated_training/data/original_data/BraTS18/'
+brats_main_dir = '/data/original_data/BraTS18/'
 Patient_dir = sorted(glob(brats_main_dir + '/HGG/*'))
 
 print('-' * 30)
@@ -204,10 +204,10 @@ for nb_file in range(len(Patient_dir)):
     imageVol = np.concatenate((np.expand_dims(T1Vol, axis=0), np.expand_dims(T2Vol, axis=0), np.expand_dims(FLAIRVol, axis=0), np.expand_dims(T1cVol, axis=0)), axis=0)
 
     mkdir('data/BraTS18')
-    # np.save('data/BraTS18' + '/img_%s.npy' % (str(Patient_dir[nb_file].split('Brats18_')[-1])), imageVol)
-    # np.save('data/BraTS18' + '/mask_%s.npy' % (str(Patient_dir[nb_file].split('Brats18_')[-1])), maskVol)
+    np.save('data/BraTS18' + '/img_%s.npy' % (str(Patient_dir[nb_file].split('Brats18_')[-1])), imageVol)
+    np.save('data/BraTS18' + '/mask_%s.npy' % (str(Patient_dir[nb_file].split('Brats18_')[-1])), maskVol)
 
-    # print('BraTS2018/HGG Image process {}/{} finished'.format(nb_file, len(Patient_dir)))
+    print('BraTS2018/HGG Image process {}/{} finished'.format(nb_file, len(Patient_dir)))
 
 
 print('finished')
