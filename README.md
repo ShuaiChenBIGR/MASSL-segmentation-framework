@@ -19,13 +19,13 @@ For questions please contact me through github or email directly.
 10. elasticdeform
 
 ## Training steps
-1. Prepare 3D data for training, validation, and testing. Set the image patch size in module/common_module.py [BraTSshape]. Set folder path, preprocessing, and save as .npy files in Data_BraTS2018.py.
+1. Prepare 3D data for training, validation, and testing. Set the image patch size in module/common_module.py [BraTSshape]. Set folder path, preprocessing, and save as .npy files in BraTS2018_preprocess.py.
 2. Set dataloader for pytorch, data split, and data augmentation in dataloader/BraTS18_dataloader.py.
-3. Set random data seed, job you want to run, and data split you want to test in Sequance_BraTS18_epoch.py [for CNN baseline, pretraining methods, and MSSL method], or Sequance_BraTS18.epoch.py [for MASSL method]. 
-4. Run Sequance_BraTS18_epoch.py or Sequance_BraTS18.epoch.py for training.
+3. Set random data seed, job you want to run, and data split you want to test in Sequance_BraTS18_epoch.py [for CNN baseline, pretraining methods, and MSSL method], or Sequance_BraTS18_epoch_attention.py [for MASSL method]. 
+4. Run Sequance_BraTS18_epoch.py or Sequance_BraTS18_epoch_attention.py for training.
 
 ## Testing
-Change variable [Test_only=True] in Sequance_BraTS18_epoch.py or Sequance_BraTS18.epoch.py and run again. 
+Change variable [Test_only=True] in Sequance_BraTS18_epoch.py or Sequance_BraTS18_epoch_attention.py and run again. 
 
 ## Citation
 If you find the method useful for your research, please consider citing the paper:
